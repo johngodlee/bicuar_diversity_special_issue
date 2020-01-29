@@ -52,7 +52,7 @@ bicuar_plot_map <- ggplot() +
   labs(x = "Longitude", y = "Latitude") + 
   geom_point(aes(x = bicuar_centre[1], y = bicuar_centre[2]))
 
-# register_google(key = "AIzaSyDgQ8LAPg0Mx5z7PrYfWbTrpc3jkyeLxhY", write = TRUE)
+# register_google(key = "", write = TRUE)
 # bicuar_ggmap <- get_googlemap(bicuar_centre, zoom = 9, maptype = "satellite")
 # saveRDS(bicuar_ggmap, "data/bicuar_ggtiles.rds")
 bicuar_ggmap <- readRDS("data/bicuar_ggtiles.rds")
