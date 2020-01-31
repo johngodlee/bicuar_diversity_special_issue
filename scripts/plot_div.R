@@ -297,24 +297,24 @@ bakilwa <- paste0(round(ba_mean[ba_mean$group == "kilwa",]$mean_ba, 2),
   "$\\pm$", round(ba_mean[ba_mean$group == "kilwa",]$sem_ba, 3))
 
 bicuarshannon <- paste0(
-  round(mean(alpha_df[alpha_df$group == "bicuar",]$shannon), 2), 
+  round(mean(alpha_df[alpha_df$group == "bicuar",]$shannon), 1), 
   "$\\pm$",
-  round(sd(alpha_df[alpha_df$group == "bicuar",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "bicuar",]$shannon)), 3)
+  round(sd(alpha_df[alpha_df$group == "bicuar",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "bicuar",]$shannon)), 2)
   )
 nhamshannon <- paste0(
-  round(mean(alpha_df[alpha_df$group == "nham",]$shannon), 2), 
+  round(mean(alpha_df[alpha_df$group == "nham",]$shannon), 1), 
   "$\\pm$",
-  round(sd(alpha_df[alpha_df$group == "nham",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "nham",]$shannon)), 3)
+  round(sd(alpha_df[alpha_df$group == "nham",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "nham",]$shannon)), 2)
   )
 kilwashannon <- paste0(
-  round(mean(alpha_df[alpha_df$group == "kilwa",]$shannon), 2), 
+  round(mean(alpha_df[alpha_df$group == "kilwa",]$shannon), 1), 
   "$\\pm$",
-  round(sd(alpha_df[alpha_df$group == "kilwa",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "kilwa",]$shannon)), 3)
+  round(sd(alpha_df[alpha_df$group == "kilwa",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "kilwa",]$shannon)), 2)
   )
 drcshannon <- paste0(
-  round(mean(alpha_df[alpha_df$group == "drc",]$shannon), 2), 
+  round(mean(alpha_df[alpha_df$group == "drc",]$shannon), 1), 
   "$\\pm$",
-  round(sd(alpha_df[alpha_df$group == "drc",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "drc",]$shannon)), 3)
+  round(sd(alpha_df[alpha_df$group == "drc",]$shannon) / sqrt(length(alpha_df[alpha_df$group == "drc",]$shannon)), 2)
   )
 bicuarminshannon <- round(min(alpha_list$bicuar$shannon), 2)
 bicuarminshannonplot <- alpha_list$bicuar[

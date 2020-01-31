@@ -276,52 +276,52 @@ nbmdegrad <- c(degrad_species[degrad_species$species_binomial == "Baphia massaie
 njpdegrad <- c(big_species[big_species$species_binomial == "Julbernardia paniculata", "n"])
  
 degradshannon <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 2))
 
 bicuarsubshannon <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Not disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "shannon" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 2))
 
 degradequit <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 1))
 
 bicuarsubequit <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Not disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "equit" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 2))
 
 bicuarsubrich <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Not disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 2))
 
 degradrich <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "rich" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 2))
 
 bicuarsubba <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Not disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Not disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Not disturbed", "value"]$value)), 2))
 
 degradba <- paste0(
-  round(mean(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value), 2),
+  round(mean(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value), 1),
   "$\\pm$",
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value) / 
-      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 3))
+      sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 2))
 
 ndegradonlyspecies <- length(degrad_only_species)
 nbigonlyspecies <- length(big_only_species)

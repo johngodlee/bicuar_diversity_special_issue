@@ -135,8 +135,28 @@ pdf(file = "img/stem_ab_dbh_bin.pdf", width = 15, height = 6)
 stem_ab_dbh_bin_plot
 dev.off()
 
+# Estimate abundance of 5-10 cm in DRC using extrapolation of log abundance ----
+stem_ab_lm_df <- abund_dbh_ord %>% 
+  filter(est == FALSE) %>%
+  group_by(plotcode, group) %>% 
+  do(model = lm(log(n) ~ as.numeric(.$dbh_bin), data = .))
+
+stem_ab_lm_df_drc <- stem_ab_lm_df %>%
+  filter(group == "DRC")
+
+extrap_drc_5_10 <- unname(sapply(stem_ab_lm_df_drc$model, function(x){
+  exp(predict(x, data.frame(y=1))[1])
+}))
+
+extrap_drc_5_10_df <- data.frame(group = "DRC", 
+  plotcode = stem_ab_lm_df_drc$plotcode,
+  dbh_bin = "5-10", n = extrap_drc_5_10, est = TRUE)
+
 # Bar chart of mean per site ----
-abund_dbh_ord_mean <- abund_dbh_ord %>% 
+abund_dbh_ord_mean <- abund_dbh_ord %>%
+  dplyr::select(-ord, -plotcode_ord) %>%
+  filter(est == FALSE) %>%
+  rbind(., extrap_drc_5_10_df) %>%
   group_by(group, dbh_bin) %>%
   summarise(mean_n = mean(n, na.rm = TRUE),
     samples = n(),
@@ -164,22 +184,17 @@ pdf(file = "img/stem_ab_dbh_bin_group.pdf", width = 8, height = 4)
 stem_ab_dbh_bin_plot_group
 dev.off()
 
-# Calculate slopes of DBH bin for each plot ----
-stem_ab_lm_df <- abund_dbh_ord %>% 
-  group_by(plotcode, group) %>% 
-  do(model = lm(log(n) ~ as.numeric(.$dbh_bin), data = .)) %>% 
-  tidy(model) %>%
-  filter(term == "as.numeric(.$dbh_bin)") %>%
-  dplyr::select(plotcode, group, estimate, std.error)
 
+
+# Line plot of DBH abundance distribution for each plot ----
 stem_ab_lm_group_df <- abund_dbh_ord %>% 
+  filter(est == FALSE) %>%
   group_by(group) %>% 
   do(model = lm(log(n) ~ as.numeric(.$dbh_bin), data = .)) %>% 
   tidy(model) %>%
   filter(term == "as.numeric(.$dbh_bin)") %>%
   dplyr::select(group, estimate, std.error)
 
-# Line plot of DBH abundance distribution for each plot ----
 stem_ab_lm_plot <- ggplot(filter(abund_dbh_ord, est == FALSE), 
   aes(x = as.numeric(dbh_bin), y = n, group = group, colour = group)) + 
   geom_point(position = position_jitter(width = 0.2)) + 

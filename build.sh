@@ -16,21 +16,21 @@ INC="manuscript/include/"
 # rm data/region_temp_precip.rds
 
 # Run data analysis
-# Rscript scripts/temp_precip_region.R
-# Rscript scripts/stems_clean.R
-# Rscript scripts/species_clean.R
-# Rscript scripts/bicuar_20_50.R
-# Rscript scripts/stems_to_trees.R
-# Rscript scripts/plot_loc.R
-# Rscript scripts/plot_clim.R
-# Rscript scripts/plot_div.R
-# Rscript scripts/beta_div.R
-# Rscript scripts/data_descrip.R
-# Rscript scripts/dbh_bin.R
-# Rscript scripts/degrad.R
-# Rscript scripts/bicuar_map.R
-# Rscript scripts/bicuar_species_table.R
-# Rscript scripts/plot_clim_plot.R
+Rscript scripts/temp_precip_region.R
+Rscript scripts/stems_clean.R
+Rscript scripts/species_clean.R
+Rscript scripts/bicuar_20_50.R
+Rscript scripts/stems_to_trees.R
+Rscript scripts/plot_loc.R
+Rscript scripts/plot_clim.R
+Rscript scripts/plot_div.R
+Rscript scripts/beta_div.R
+Rscript scripts/data_descrip.R
+Rscript scripts/dbh_bin.R
+Rscript scripts/degrad.R
+Rscript scripts/bicuar_map.R
+Rscript scripts/bicuar_species_table.R
+Rscript scripts/plot_clim_plot.R
 
 # Copy analysis outputs to manuscript directory
 mkdir -p $IMG
