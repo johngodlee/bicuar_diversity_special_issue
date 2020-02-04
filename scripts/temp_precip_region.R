@@ -14,11 +14,7 @@ library(rgdal)
 
 # Import data ----
 # Get Vegetation type shapefile
-white_veg <- readOGR(dsn="data/whitesveg", layer="Whites vegetation")
-
-# Subset to miombo
-white_veg_miombo <- white_veg[!is.na(white_veg@data$DESCRIPTIO) & white_veg@data$DESCRIPTIO == "Moist-infertile savanna" , ]
-white_veg_miombo_south <- crop(white_veg_miombo, extent(10, 40, -30, 0))
+miombo <- readOGR(dsn="data/teow_miombo/miombo", layer="miombo")
 
 # Temperature raster
 # Get list of files
@@ -32,7 +28,7 @@ allrasters_t <- lapply(rastlist_t, raster)
 
 # Crop to miombo extent
 allrasters_t_crop <- lapply(allrasters_t, function(x){
-  crop(x, white_veg_miombo_south)
+  crop(x, miombo)
 })
 
 # Stack
@@ -42,7 +38,7 @@ allrasters_t_crop_stack <- raster::stack(allrasters_t_crop)
 allrasters_t_mean <- calc(allrasters_t_crop_stack, mean, na.rm = TRUE)
 
 # Crop to miombo outline
-allrasters_t_mean_crop_mask <- mask(allrasters_t_mean, white_veg_miombo_south)
+allrasters_t_mean_crop_mask <- mask(allrasters_t_mean, miombo)
 
 # Extract all values
 t_vals <- values(allrasters_t_mean_crop_mask)
@@ -59,7 +55,7 @@ allrasters_p <- lapply(rastlist_p, raster)
 
 # Crop to plot extent
 allrasters_p_crop <- lapply(allrasters_p, function(x){
-  crop(x, white_veg_miombo_south)
+  crop(x, miombo)
 })
 
 # Stack
@@ -69,7 +65,7 @@ allrasters_p_crop_stack <- raster::stack(allrasters_p_crop)
 allrasters_p_mean <- calc(allrasters_p_crop_stack, sum, na.rm = TRUE)
 
 # Crop to miombo outline
-allrasters_p_mean_crop_mask <- mask(allrasters_p_mean, white_veg_miombo_south)
+allrasters_p_mean_crop_mask <- mask(allrasters_p_mean, miombo)
 
 # Extract all values
 p_vals <- values(allrasters_p_mean_crop_mask)

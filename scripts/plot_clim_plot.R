@@ -24,16 +24,11 @@ miombo_clim <- readRDS("data/region_temp_precip.rds")
 precip_raster <- readRDS("data/precip_raster.rds")
 
 # Whites veg map
-white_veg <- readOGR(dsn="data/whitesveg", 
-  layer="Whites vegetation")
+miombo <- readOGR(dsn="data/teow_miombo/miombo", 
+  layer="miombo")
 
-white_veg_fort <- fortify(white_veg, region = "DESCRIPTIO")
-names(white_veg_fort)
-length(unique(white_veg_fort$id))
-
-white_veg_miombo <- white_veg_fort %>%
-  filter(id %in% c("Moist-infertile savanna"),
-    lat < -2)
+miombo_f <- fortify(miombo, region = "OBJECTID")
+names(miombo)
 
 # Plot of MAP~MAT and plots ----
 # Subset to big plots
@@ -87,11 +82,11 @@ plot_loc_list_big_group <- lapply(1:length(plot_loc_list_big), function(x){
 plot_loc_df <- do.call(rbind, plot_loc_list_big_group)
 
 # Create simplified spatial object from precipitation raster
-# precip_raster_agg <- aggregate(precip_raster, fact = 10)
-# precip_spdf <- as(precip_raster_agg, "SpatialPixelsDataFrame")
-# precip_df <- as.data.frame(precip_spdf)
-# colnames(precip_df) <- c("value", "x", "y")
-# saveRDS(precip_df, file = "data/precip_df.rds")
+ precip_raster_agg <- aggregate(precip_raster, fact = 10)
+ precip_spdf <- as(precip_raster_agg, "SpatialPixelsDataFrame")
+ precip_df <- as.data.frame(precip_spdf)
+ colnames(precip_df) <- c("value", "x", "y")
+ saveRDS(precip_df, file = "data/precip_df.rds")
 precip_df <- readRDS("data/precip_df.rds")
 
 # Make plot
@@ -118,4 +113,5 @@ plot_map <- ggplot() +
 pdf(file = "img/plot_map.pdf", plot_map, width = 6, height = 6)
 plot_map
 dev.off()
+
 
