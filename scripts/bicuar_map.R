@@ -26,7 +26,6 @@ plot_loc_list <- readRDS("data/plot_loc_list.rds")
 
 bicuar_df <- fortify(bicuar_poly)
 
-
 plot_loc_df <- do.call(rbind,  plot_loc_list[c("bicuar", "bicuar_degrad")])
 plot_loc_df$group <- case_when(grepl("ABGD", plot_loc_df$plotcode) ~ "degrad",
   TRUE ~ "intact")
@@ -69,7 +68,7 @@ bicuar_ggmap_plot <- ggmap(bicuar_ggmap) +
   #   segment.colour = "black",  min.segment.length = 0,
   #   label.padding = 0.075, point.padding = 0.5, box.padding = 0.6) +
   theme_bw() + 
-  theme(legend.position = "none") +
+  theme(legend.position = "right") +
   labs(x = "Longitude", y = "Latitude")  + 
   lims(x = c(14.2, 15.5), y = c(-15.75, -14.75)) + 
   scale_fill_manual(name = "", labels = c("Disturbed", "Not\ndisturbed"), values = degrad_pal) + 

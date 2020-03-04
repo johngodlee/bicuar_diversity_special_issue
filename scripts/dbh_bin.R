@@ -83,7 +83,7 @@ stems_est_df <- rbind(stems, small_stems_rows)
 
 # Add plot group id
 stems_est_df$group <- case_when(
-  grepl("ABG", stems_est_df$plotcode) ~ "Angola",
+  grepl("ABG", stems_est_df$plotcode) ~ "Bicuar NP",
   grepl("DKS", stems_est_df$plotcode) ~ "DRC",
   grepl("TKW", stems_est_df$plotcode) ~ "Tanzania",
   grepl("MGR", stems_est_df$plotcode) ~ "Mozambique",
@@ -177,7 +177,7 @@ stem_ab_dbh_bin_plot_group <- ggplot(abund_dbh_ord_mean,
     hjust=1)) + 
   labs(x = "Stem diameter bin (cm)", y = "Number of stems") +
   theme(legend.position = "none") + 
-  scale_fill_manual(name = "", values = big_pal, labels = c("Angola", "DRC", "Tanzania", "Mozambique")) + 
+  scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique")) + 
   scale_linetype_manual(values = c(1,5), guide = FALSE)
 
 pdf(file = "img/stem_ab_dbh_bin_group.pdf", width = 8, height = 4)
@@ -201,7 +201,7 @@ stem_ab_lm_plot <- ggplot(filter(abund_dbh_ord, est == FALSE),
   stat_smooth(method = "lm") + 
   theme_classic() +
   scale_colour_manual(name = "", values = big_pal, 
-    labels = c("Angola", "DRC", "Tanzania", "Mozambique")) + 
+    labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique")) + 
   labs(x = "Stem diameter bin (cm)", y = "Number of stems")
 
 pdf(file = "img/stem_ab_lm.pdf", width = 8, height = 5)
@@ -227,9 +227,9 @@ summary(prop_big_group_lm)
 TukeyHSD(aov(prop_big_group_lm))
 
 # Numerical outputs ----
-dbhslopebicuar <- paste0(round(stem_ab_lm_group_df[stem_ab_lm_group_df$group == "Angola",]$estimate, 2),
+dbhslopebicuar <- paste0(round(stem_ab_lm_group_df[stem_ab_lm_group_df$group == "Bicuar NP",]$estimate, 2),
   "$\\pm$",
-  round(stem_ab_lm_group_df[stem_ab_lm_group_df$group == "Angola",]$std.error, 3))
+  round(stem_ab_lm_group_df[stem_ab_lm_group_df$group == "Bicuar NP",]$std.error, 3))
 
 dbhslopedrc <- paste0(round(stem_ab_lm_group_df[stem_ab_lm_group_df$group == "DRC",]$estimate, 2),
   "$\\pm$",

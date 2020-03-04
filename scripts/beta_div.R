@@ -117,7 +117,7 @@ s_all_beta_div_plot <- ggplot() +
   #   aes(x = PCoA1, y = PCoA2, fill = group, label = plot),
   #   size = 4, show.legend = FALSE) +
   theme_classic() + 
-  scale_fill_manual(name = "", values = big_pal, labels = c("Angola", "DRC", "Tanzania", "Mozambique"))
+  scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique"))
 
 pdf(file = paste0("img/s_all_beta_div.pdf"), width = 8, height = 6)
 s_all_beta_div_plot
@@ -151,7 +151,8 @@ species_scores <- as.data.frame(scores(tree_ab_nmds, "species"))
 species_scores$species_binomial <- rownames(species_scores)
 
 # Environmental fit with NMDS
-tree_ab_envfit <- envfit(tree_ab_nmds, plot_clim_s_all[,c("mat", "map", "mat_sd", "cwd")], permutations = 999)
+plot_clim_s_all$minus_cwd <- abs(plot_clim_s_all$cwd)
+tree_ab_envfit <- envfit(tree_ab_nmds, plot_clim_s_all[,c("mat", "map", "mat_sd", "minus_cwd")], permutations = 999)
 
 tree_ab_envfit
 plot(tree_ab_nmds, type = "p")
@@ -165,35 +166,101 @@ tree_ab_envfit_arrows$p <- tree_ab_envfit$vectors$pvals
 tree_ab_envfit_arrows$var_plot <- case_when(
   tree_ab_envfit_arrows$var == "map" ~ "MAP", 
   tree_ab_envfit_arrows$var == "mat" ~ "MAT", 
-  tree_ab_envfit_arrows$var == "cwd" ~ "CWD", 
+  tree_ab_envfit_arrows$var == "minus_cwd" ~ "-CWD", 
   tree_ab_envfit_arrows$var == "mat_sd" ~ "MAT SD"
 )
 
+species_scores_text <- species_scores %>%
+	filter(species_binomial %in% c(
+		"Baikiaea plurijuga",
+		"Baphia massaiensis",
+		"Croton gratissimus",
+		"Brachystegia tamarindoides",
+		"Ochna pulchra",
+		"Julbernardia paniculata",
+		"Pterocarpus angolensis",
+		"Pterocarpus lucens",
+		"Strychnos pungens",
+		"Bridelia mollis"
+	))
+	
 nmds_envfit_plot <- ggplot() + 
   geom_hline(aes(yintercept = 0), linetype = 2) + 
   geom_vline(aes(xintercept = 0), linetype = 2) + 
-  # geom_point(data = species_scores,
-  #   aes(x = NMDS1, y = NMDS2)) + 
   # geom_label_repel(data = plot_scores,
   #   aes(x = NMDS1, y = NMDS2, label =  plot_group$plotcode, colour = plot_group$group),
   #   label.padding = 0.15, box.padding = 0.5) +
-  # geom_label_repel(data = filter(species_scores, NMDS1 < -0.5 & NMDS2 <0),
-  #   aes(x = NMDS1, y = NMDS2, label =  species_binomial),
-  #   label.padding = 0.15, box.padding = 0.5) +
   geom_point(data = plot_scores,
     aes(x = NMDS1, y = NMDS2, fill = plot_group$group), shape = 23, size = 3) +
+	geom_point(data = species_scores_text,
+		aes(x = NMDS1, y = NMDS2)) + 
+	geom_label_repel(data = species_scores_text,
+		aes(x = NMDS1, y = NMDS2, label =  species_binomial),
+		label.padding = 0.15, box.padding = 0.35, point.padding = 0.3, alpha = 0.8,
+		nudge_x = c(0,0,0,0,0,0,1.6,0,0,0),
+		nudge_y = c(0,0,0,0,0.5,0,0,0,0,0)) +
   coord_equal() +
   theme_classic() + 
   geom_segment(data = tree_ab_envfit_arrows, 
     aes(xend = NMDS1*r2*2, yend = NMDS2*r2*2, x = 0, y = 0), 
-    arrow = arrow(length = unit(0.05, "npc")),
+    arrow = arrow(length = unit(0.03, "npc")),
     colour = "blue") + 
   geom_text(data = tree_ab_envfit_arrows,
     aes(x = NMDS1, y = NMDS2, label = var_plot),
     colour = "blue", 
-    nudge_y = c(-0.35,0.1,0,0),
-    nudge_x = c(0.75,0,0.5,0.25)) + 
-  scale_fill_manual(name = "", values = big_pal, labels = c("Angola", "DRC", "Tanzania", "Mozambique"))
+    nudge_y = c(-0.35,-0.1,0,0),
+    nudge_x = c(0.5,0,0.2,-0.25)) + 
+  scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique")) + 
+	ylim(-1.8, 1.5) + 
+	theme(legend.position = "none")
+pdf(file = paste0("img/all_nmds_envfit.pdf"), width = 10, height = 8)
+nmds_envfit_plot
+dev.off()
+
+tree_ab_envfit_low <- envfit(tree_ab_nmds, plot_clim_s_all[,c("mat", "map", "mat_sd", "minus_cwd")], permutations = 999, choices = c(3,4))
+
+tree_ab_envfit_low_arrows <- data.frame(tree_ab_envfit_low$vectors$arrows)
+tree_ab_envfit_low_arrows$var <- rownames(tree_ab_envfit_low_arrows)
+tree_ab_envfit_low_arrows$r2 <- tree_ab_envfit_low$vectors$r
+tree_ab_envfit_low_arrows$p <- tree_ab_envfit_low$vectors$pvals
+tree_ab_envfit_low_arrows$var_plot <- case_when(
+	tree_ab_envfit_low_arrows$var == "map" ~ "MAP", 
+	tree_ab_envfit_low_arrows$var == "mat" ~ "MAT", 
+	tree_ab_envfit_low_arrows$var == "minus_cwd" ~ "-CWD", 
+	tree_ab_envfit_low_arrows$var == "mat_sd" ~ "MAT SD"
+)
+
+nmds_envfit_plot_low <- ggplot() + 
+	geom_hline(aes(yintercept = 0), linetype = 2) + 
+	geom_vline(aes(xintercept = 0), linetype = 2) + 
+	# geom_label_repel(data = plot_scores,
+	#   aes(x = NMDS1, y = NMDS2, label =  plot_group$plotcode, colour = plot_group$group),
+	#   label.padding = 0.15, box.padding = 0.5) +
+	geom_point(data = plot_scores,
+		aes(x = NMDS3, y = NMDS4, fill = plot_group$group), shape = 23, size = 3) +
+	geom_point(data = species_scores_text,
+		aes(x = NMDS3, y = NMDS4)) + 
+	geom_label_repel(data = species_scores_text,
+		aes(x = NMDS3, y = NMDS4, label =  species_binomial),
+		label.padding = 0.15, box.padding = 0.35, point.padding = 0.3, alpha = 0.8,
+		nudge_x = c(0,0,0,0,0,0,0,0,0,0),
+		nudge_y = c(0,0,0,0,0,0,0,0,0,0)) +
+	geom_segment(data = tree_ab_envfit_low_arrows, 
+		aes(xend = NMDS3*r2*2, yend = NMDS4*r2*2, x = 0, y = 0), 
+		arrow = arrow(length = unit(0.03, "npc")),
+		colour = "blue") + 
+	geom_text(data = tree_ab_envfit_low_arrows,
+		aes(x = NMDS3*r2*2, y = NMDS4*r2*2, label = var_plot),
+		colour = "blue", 
+		nudge_y = c(0.08,0.05,0.1,-0.05),
+		nudge_x = c(0,0.125,0,-0.02)) + 
+	coord_equal() +
+	theme_classic() + 
+	scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique"))
+
+pdf(file = paste0("img/all_nmds_envfit_low.pdf"), width = 10, height = 8)
+nmds_envfit_plot_low
+dev.off()
 
 nmds_plot <- ggplot() + 
   geom_hline(aes(yintercept = 0), linetype = 2) + 
@@ -207,7 +274,7 @@ nmds_plot <- ggplot() +
     aes(x = NMDS1, y = NMDS2, fill = plot_group$group), shape = 23, size = 3) +
   coord_equal() +
   theme_classic() + 
-  scale_fill_manual(name = "", values = big_pal, labels = c("Angola", "DRC", "Tanzania", "Mozambique"))
+  scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique"))
 
 nmds_plot_species <- ggplot() + 
   geom_hline(aes(yintercept = 0), linetype = 2) + 
@@ -222,14 +289,12 @@ nmds_plot_species <- ggplot() +
     aes(x = NMDS1, y = NMDS2, fill = plot_group$group), shape = 23, size = 3) +
   coord_equal() +
   theme_classic() + 
-  scale_fill_manual(name = "", values = big_pal, labels = c("Angola", "DRC", "Tanzania", "Mozambique"))
+  scale_fill_manual(name = "", values = big_pal, labels = c("Bicuar NP", "DRC", "Tanzania", "Mozambique"))
 
 ##' All plot groups are distinct from each other by species composition
 ##' Bicuar plots 9, 13, and 15 are very very different from the others 
 
-pdf(file = paste0("img/all_nmds_envfit.pdf"), width = 8, height = 6)
-nmds_envfit_plot
-dev.off()
+
 
 pdf(file = paste0("img/all_nmds.pdf"), width = 10, height = 8)
 nmds_plot

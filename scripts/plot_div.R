@@ -136,7 +136,7 @@ alpha_df_gather <- alpha_df %>%
       expression("Shannon"~"equitability")))) %>%
   ungroup() %>%
   mutate(group = case_when(
-    group == "bicuar" ~ "Angola",
+    group == "bicuar" ~ "Bicuar NP",
     group == "drc" ~ "DRC", 
     group == "kilwa" ~ "Tanzania",
     group == "nham" ~ "Mozambique"))

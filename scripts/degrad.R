@@ -35,6 +35,18 @@ bicuar_trees_sub_list <- lapply(bicuar_trees_list, function(x){
 
 bicuar_trees_sub_df <- do.call(rbind, bicuar_trees_sub_list) 
 
+# Do the same with stem level data 
+bicuar_stems_list <- split(stems_list$bicuar, stems_list$bicuar$plotcode)
+
+bicuar_stems_sub_list <- lapply(bicuar_stems_list, function(x){
+	rand <- sample(1:10, 1)
+	
+	return(x %>% filter(!is.na(subplot_20_50), subplot_20_50 == rand)) 
+})
+
+bicuar_stems_sub_df <- do.call(rbind, bicuar_stems_sub_list) 
+
+
 # Join degrad plots with subsampled big plots
 bicuar_trees_all_df <- bicuar_trees_sub_df %>%
   dplyr::select(plotcode, species_binomial, dbh_cm) %>%
@@ -44,6 +56,18 @@ bicuar_trees_all_df <- bicuar_trees_sub_df %>%
     group = case_when(grepl("D", plotcode) ~ "degrad",
       TRUE ~ "intact")
   )
+
+degrad_stems <- dplyr::select(stems_list[[2]], plotcode, species_binomial, dbh_cm, base_stem_id) %>%
+	mutate(base_stem_id = paste0("D", base_stem_id))
+
+bicuar_stems_all_df <- bicuar_stems_sub_df %>%
+	dplyr::select(plotcode, species_binomial, dbh_cm, base_stem_id) %>%
+	bind_rows(., degrad_stems) %>%
+	mutate(plotcode = gsub("ABG", "", .$plotcode) %>%
+			gsub("-0*", "", .),
+		group = case_when(grepl("D", plotcode) ~ "degrad",
+			TRUE ~ "intact")
+	)
 
 # Tree abundance matrix for Bicuar degradation plots and big plots
 tree_ab_mat_bicuar_degrad <- bicuar_trees_all_df %>%
@@ -90,15 +114,23 @@ bicuar_degrad_plot_scores$group <- case_when(
 bicuar_degrad_species_scores <- as.data.frame(scores(bicuar_degrad_tree_ab_nmds, "species")) 
 bicuar_degrad_species_scores$species_binomial <- rownames(bicuar_degrad_species_scores)
 
+bicuar_degrad_species_scores_text <- bicuar_degrad_species_scores %>%
+	filter(species_binomial %in% c(
+		"Brachystegia tamarindoides",
+		"Burkea africana", 
+		"Baikiaea plurijuga",
+		"Baphia massaiensis",
+		"Julbernardia paniculata"))
+
 # Plot extracted scores in ggplot2
 bicuar_degrad_nmds_plot <- ggplot() + 
   geom_point(data = bicuar_degrad_plot_scores,
     aes(x = NMDS1, y = NMDS2, fill = group), shape = 23, size = 3) +
-  # geom_point(data = bicuar_degrad_species_scores,
-  #   aes(x = NMDS1, y = NMDS2)) + 
-  # geom_label_repel(data = bicuar_degrad_plot_scores,
-  #   aes(x = NMDS1, y = NMDS2, label =  plot, colour = group),
-  #   label.padding = 0.08, box.padding = 0.5, show.legend = FALSE) +
+  geom_point(data = bicuar_degrad_species_scores_text,
+    aes(x = NMDS1, y = NMDS2)) + 
+  geom_label_repel(data = bicuar_degrad_species_scores_text,
+    aes(x = NMDS1, y = NMDS2, label = species_binomial),
+    label.padding = 0.08, box.padding = 1, point.padding = 0.15, show.legend = FALSE) +
   coord_equal() +
   theme_classic() + 
   theme(legend.position = "none") + 
@@ -193,6 +225,82 @@ common_dim_bicuar <- stems_list$bicuar %>%
     mean_height = mean(height_m, na.rm = TRUE),
     sd_dbh = sd(dbh_cm, na.rm = TRUE),
     sd_height = sd(height_m, na.rm = TRUE))
+
+# What is the mean stem density? ----
+stem_dens_bicuar <- stems_list$bicuar %>%
+	group_by(plotcode) %>%
+	tally()
+
+stem_dens_degrad <- stems_list$bicuar_degrad %>%
+	group_by(plotcode) %>%
+	tally()
+
+# Which plots have more multi stemmed trees? ----
+multi_stem <- bicuar_stems_all_df %>%
+	group_by(plotcode, base_stem_id) %>%
+	tally() %>%
+	filter(n > 1) %>%
+	mutate(group = case_when(
+		grepl("D", plotcode) ~ "degrad",
+		TRUE ~ "intact")) %>%
+	ungroup() %>%
+	group_by(group) %>%
+	summarise(mean_n = mean(n, na.rm = TRUE),
+		sd_n = sd(n, na.rm = TRUE))
+
+bicuar_stems_all_df_bin <- bicuar_stems_all_df %>%
+	mutate(dbh_bin = factor(case_when(dbh_cm <= 10.0 ~ "5-10",
+		dbh_cm >= 10.0 & dbh_cm <= 20.0 ~ "10-20",
+		dbh_cm >= 20.0 & dbh_cm <= 30.0 ~ "20-30",
+		dbh_cm >= 30.0 & dbh_cm <= 40.0 ~ "30-40",
+		dbh_cm >= 40.0 ~ "40+"), 
+		levels = c("5-10", "10-20", "20-30", "30-40", "40+")))
+
+bicuar_stems_all_df_bin_list <- split(bicuar_stems_all_df_bin, bicuar_stems_all_df_bin$dbh_bin)
+
+lapply(bicuar_stems_all_df_bin_list, function(x){
+	df <- x %>%
+		group_by(plotcode, group) %>%
+		tally()
+	
+	mod <- glm(n ~ group, data = df, family = "poisson")
+	
+	summary(mod)
+})
+
+bicuar_stems_all_df_bin_mean <- bicuar_stems_all_df_bin %>%
+	group_by(group, plotcode, dbh_bin) %>%
+	tally() %>%
+	filter(!is.na(dbh_bin)) %>% 
+	group_by(group, dbh_bin) %>%
+	summarise(mean_n = mean(n, na.rm = TRUE),
+		samples = n(),
+		sem = sd(n, na.rm = TRUE) / sqrt(samples)) %>%
+	ungroup() %>%
+	mutate(group = factor(group,
+		levels = c("degrad", "intact"), labels = c("Disturbed", "Not disturbed")))
+
+degrad_dbh_bin <- ggplot(bicuar_stems_all_df_bin_mean,
+	aes(x = dbh_bin, y = mean_n)) + 
+	geom_bar(aes(fill = group), 
+		stat = "identity", colour = "black", position = position_dodge(width=0.9)) +
+	geom_errorbar(aes(ymin = mean_n - sem, ymax = mean_n + sem, group = group), 
+		width = 0.5, position = position_dodge(width=0.9)) + 
+	theme_classic() + 
+	theme(axis.text.x=element_text(
+		angle=45, 
+		vjust=1, 
+		hjust=1)) + 
+	labs(x = "Stem diameter bin (cm)", y = "Number of stems") +
+	theme(legend.position = c(0.9, 0.5)) + 
+	scale_fill_manual(name = "", values = degrad_pal, labels = c("Disturbed", "Not disturbed")) + 
+	geom_text(x = 1, y = 85, label = "***", size = 8) + 
+	geom_text(x = 2, y = 25, label = "***", size = 8)
+	
+
+pdf("img/degrad_dbh_bin.pdf", width = 6, height = 4)
+degrad_dbh_bin
+dev.off()
 
 # Estimate shannon equitability for evenness in degrad and non-degrad. ----
 
@@ -323,6 +431,28 @@ degradba <- paste0(
   round(sd(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value) / 
       sqrt(length(bicuar_div_gather[bicuar_div_gather$index == "ba" & bicuar_div_gather$group == "Disturbed", "value"]$value)), 2))
 
+stemdensbicuar <- paste0(
+	round(mean(stem_dens_bicuar$n), 1),
+	"$\\pm$",
+	round(sd(stem_dens_bicuar$n), 2)
+)
+
+stemdensdegrad <- paste0(
+	round(mean(stem_dens_degrad$n * 10), 1),
+	"$\\pm$",
+	round(sd(stem_dens_degrad$n * 10), 2)
+)
+
+multistemdegrad <- paste0(
+	round(multi_stem$mean_n[1], 1),
+	"$\\pm$",
+	round(multi_stem$sd_n[1], 2))
+
+multistembicuar <- paste0(
+	round(multi_stem$mean_n[2], 1),
+	"$\\pm$",
+	round(multi_stem$sd_n[2], 2))
+
 ndegradonlyspecies <- length(degrad_only_species)
 nbigonlyspecies <- length(big_only_species)
 nccdegrad <- degrad_species[degrad_species$species_binomial == "Combretum celastroides",]$n
@@ -361,7 +491,11 @@ writeLines(
     paste0("\\newcommand{\\bmdbhdegrad}{", bmdbhdegrad, "}"),
     paste0("\\newcommand{\\bmheightdegrad}{", bmheightdegrad, "}"),
     paste0("\\newcommand{\\jpdbhbicuar}{", jpdbhbicuar, "}"),
-    paste0("\\newcommand{\\jpheightbicuar}{", jpheightbicuar, "}")
+    paste0("\\newcommand{\\jpheightbicuar}{", jpheightbicuar, "}"),
+    paste0("\\newcommand{\\stemdensbicuar}{", stemdensbicuar, "}"),
+    paste0("\\newcommand{\\stemdensdegrad}{", stemdensdegrad, "}"),
+  	paste0("\\newcommand{\\multistemdegrad}{", multistemdegrad, "}"),
+  	paste0("\\newcommand{\\multistembicuar}{", multistembicuar, "}")
   ),
   fileConn)
 close(fileConn)

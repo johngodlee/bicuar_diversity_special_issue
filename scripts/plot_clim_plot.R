@@ -66,8 +66,8 @@ ggplot() +
 dev.off()
 
 # Map of plots in miombo ----
-s_af <- iso.expand(c("ZAF", "COD", "NAM", "ZMB", "BWA", "ZWE", "MOZ", 
-  "MWI", "AGO", "TZA", "COG", "RWA", "BDI", "UGA", "KEN"))
+s_af <- iso.expand(c("DZA", "AGO", "SHN", "BEN", "BWA", "BFA", "BDI", "CMR", "CPV", "CAF", "TCD", "COM", "COG", "COD", "DJI", "EGY", "GNQ", "ERI", "SWZ", "ETH", "GAB", "GMB", "GHA", "GIN", "GNB", "CIV", "KEN", "LSO", "LBR", "LBY", "MWI", "MLI", "MRT", "MUS", "MYT", "MAR", "MOZ", "NAM", "NER", "NGA", "STP", "REU", "RWA", "STP", "SEN", "SYC", "SLE", "SOM", "ZAF", "SSD", "SHN", "SDN", "SWZ", "TZA", "TGO", "TUN", "UGA", "COD", "ZMB", "TZA", "ZWE"
+))
 
 # Create map of country outlines
 map_africa <- borders(database = "world", regions = s_af, fill = "grey90", colour = "black")
@@ -91,7 +91,7 @@ precip_df <- readRDS("data/precip_df.rds")
 
 # Make plot
 plot_map <- ggplot() + 
-  geom_tile(data = precip_df, aes(x = x, y = y, fill = value, colour = value)) + 
+	geom_tile(data = precip_df, aes(x = x, y = y, fill = value, colour = value)) + 
   scale_colour_gradient(name = expression("MAP"~(mm~y^-1)),
     low = "#FAE987", high = "#332B00") + 
   scale_fill_gradient(name = expression("MAP"~(mm~y^-1)),
@@ -104,10 +104,11 @@ plot_map <- ggplot() +
   scale_fill_manual(name = "", values = big_pal, 
     labels = c("Angola", "DRC", "Tanzania", "Mozambique")) +
   coord_map() + 
-  ylim(-35.5, 10) + 
+  ylim(-35.5, 38) +
+	xlim(-20, 52) +
   labs(x = "Longitude", y = "Latitude") + 
   theme_classic() + 
-  theme(legend.position = c(0.89, 0.15), 
+  theme(legend.position = c(0.2, 0.18), 
     legend.background = element_blank())
 
 pdf(file = "img/plot_map.pdf", plot_map, width = 6, height = 6)
