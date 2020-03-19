@@ -1,0 +1,2024 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.18)  19 FEB 2020 06:23
+entering extended mode
+**C:/Users/GEF/Desktop/diversity-718596/special_issue_manuscript_changes.tex
+(C:/Users/GEF/Desktop/diversity-718596/special_issue_manuscript_changes.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(C:/Users/GEF/Desktop/diversity-718596\Definitions/mdpi.cls
+Document Class: Definitions/mdpi 09/09/2019 MDPI paper class
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count175
+\calc@Bcount=\count176
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count177
+\calc@Cskip=\skip51
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\indentfirst.st
+y"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.st
+y"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.st
+y"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.st
+y"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphic
+s.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.
+def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopd
+f.sty"
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwarer
+r.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grfext\grfext.sty"
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdef
+inekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.
+sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.st
+y"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkey
+s.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmd
+s.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopd
+f-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lastpage\lastpage.st
+y"
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count178
+\output=\toks17
+\linenoprevgraf=\count179
+\linenumbersep=\dimen139
+\linenumberwidth=\dimen140
+\c@linenumber=\count180
+\c@pagewiselinenumber=\count181
+\c@LN@truepage=\count182
+\c@internallinenumber=\count183
+\c@internallinenumbers=\count184
+\quotelinenumbersep=\dimen141
+\bframerule=\dimen142
+\bframesep=\dimen143
+\bframebox=\box45
+LaTeX Info: Redefining \\ on input line 3056.
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count185
+\float@exts=\toks18
+\float@box=\box46
+\@float@everytoks=\toks19
+\@floatcapt=\box47
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip61
+For additional information on amsmath, use the `?' option.
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen144
+)) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count186
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count187
+\leftroot@=\count188
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count189
+\DOTSCASE@=\count190
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count191
+\c@MaxMatrixCols=\count192
+\dotsspace@=\muskip16
+\c@parentequation=\count193
+\dspbrk@lvl=\count194
+\tag@help=\toks21
+\row@=\count195
+\column@=\count196
+\maxfields@=\count197
+\andhelp@=\toks22
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks23
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace.st
+y"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.st
+y"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip64
+\enit@outerparindent=\dimen153
+\enit@toks=\toks25
+\enit@inbox=\box50
+\enit@count@id=\count198
+\enitdp@description=\count199
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathpazo.sty"
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.st
+y"
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count266
+\@cmidlb=\count267
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count268
+\@lastruleclass=\count269
+\@thisrulewidth=\dimen166
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.st
+y"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box51
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen167
+\ttl@minus=\dimen168
+\ttl@toksa=\toks26
+\titlewidth=\dimen169
+\titlewidthlast=\dimen170
+\titlewidthfirst=\dimen171
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.st
+y"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count270
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tabto-ltx\tabto.sty"
+Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
+\CurrentLineWidth=\dimen172
+\TabPrevPos=\dimen173
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.c
+fg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.st
+y"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen174
+\ar@mcellbox=\box52
+\extrarowheight=\dimen175
+\NC@list=\toks27
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box53
+)
+\everycr=\toks28
+\minrowclearance=\skip69
+)
+\rownum=\count271
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks29
+\SOUL@lasttoken=\toks30
+\SOUL@cmds=\toks31
+\SOUL@buffer=\toks32
+\SOUL@token=\toks33
+\SOUL@spaceskip=\skip70
+\SOUL@ttwidth=\dimen176
+\SOUL@uldp=\dimen177
+\SOUL@ulht=\dimen178
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.st
+y"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count272
+\multirow@dima=\skip72
+\bigstrutjot=\dimen179
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype.
+sty"
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks34
+\MT@count=\count273
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen180
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count274
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype-
+pdftex.def"
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip73
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype.
+cfg"
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\ti
+kz.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.s
+ty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs
+.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfu
+til-common.tex"
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen181
+\pgfutil@tempdimb=\dimen182
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfu
+til-common-lists.tex"))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfu
+til-latex.def"
+\pgfutil@abb=\box54
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfr
+cs.code.tex"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revision.t
+ex")
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfco
+re.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfs
+ys.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+fsys.code.tex"
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfk
+eys.code.tex"
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfk
+eysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen183
+\pgf@y=\dimen184
+\pgf@xa=\dimen185
+\pgf@ya=\dimen186
+\pgf@xb=\dimen187
+\pgf@yb=\dimen188
+\pgf@xc=\dimen189
+\pgf@yc=\dimen190
+\pgf@xd=\dimen191
+\pgf@yd=\dimen192
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count275
+\c@pgf@countb=\count276
+\c@pgf@countc=\count277
+\c@pgf@countd=\count278
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count279
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+f.cfg"
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+fsys-pdftex.def"
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+fsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+fsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count280
+\pgfsyssoftpath@bigbuffer@items=\count281
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pg
+fsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+core.code.tex"
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.c
+ode.tex"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathca
+lc.code.tex"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathut
+il.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathpa
+rser.code.tex"
+\pgfmath@dimen=\dimen193
+\pgfmath@count=\count282
+\pgfmath@box=\box55
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.code.tex"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.basic.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.trigonometric.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.random.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.comparison.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.base.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.round.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.misc.code.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfu
+nctions.integerarithmetics.code.tex")))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfl
+oat.code.tex"
+\c@pgfmathroundto@lastzeros=\count283
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.co
+de.tex")
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corepoints.code.tex"
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen194
+\pgf@picmaxx=\dimen195
+\pgf@picminy=\dimen196
+\pgf@picmaxy=\dimen197
+\pgf@pathminx=\dimen198
+\pgf@pathmaxx=\dimen199
+\pgf@pathminy=\dimen256
+\pgf@pathmaxy=\dimen257
+\pgf@xx=\dimen258
+\pgf@xy=\dimen259
+\pgf@yx=\dimen260
+\pgf@yy=\dimen261
+\pgf@zx=\dimen262
+\pgf@zy=\dimen263
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen264
+\pgf@path@lasty=\dimen265
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen266
+\pgf@shorten@start@additional=\dimen267
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corescopes.code.tex"
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count284
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen268
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen269
+\pgf@pt@y=\dimen270
+\pgf@pt@temp=\dimen271
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corequick.code.tex"
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corearrows.code.tex"
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen272
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coreshade.code.tex"
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen273
+\pgf@sys@shading@range@num=\count285
+\pgf@shadingcount=\count286
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coreimage.code.tex"
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box59
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corelayers.code.tex"
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+coretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgf
+corerdf.code.tex"
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmod
+uleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box60
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmod
+uleplot.code.tex"
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pg
+fcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen274
+\pgf@nodesepend=\dimen275
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pg
+fcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor
+.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkey
+s.sty"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfk
+eys.code.tex"))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty
+"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.c
+ode.tex"))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgff
+or.code.tex"
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.c
+ode.tex")
+\pgffor@iter=\dimen276
+\pgffor@skip=\dimen277
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/
+tikz\tikz.code.tex"
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgfl
+ibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count287
+\pgfplotmarksize=\dimen278
+)
+\tikz@lastx=\dimen279
+\tikz@lasty=\dimen280
+\tikz@lastxsaved=\dimen281
+\tikz@lastysaved=\dimen282
+\tikz@lastmovetox=\dimen283
+\tikz@lastmovetoy=\dimen284
+\tikzleveldistance=\dimen285
+\tikzsiblingdistance=\dimen286
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count288
+\tikznumberofchildren=\count289
+\tikznumberofcurrentchild=\count290
+\tikz@fig@count=\count291
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmod
+ulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count292
+\pgfmatrixcurrentcolumn=\count293
+\pgf@matrix@numberofcolumns=\count294
+)
+\tikz@expandcount=\count295
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/
+tikz/libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/totcount\totcount.st
+y"
+Package: totcount 2011/01/25 v1.2 package for gettingthe total value of LaTeX c
+ounters
+) (C:/Users/GEF/Desktop/diversity-718596\Definitions/journalnames.tex)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks47
+\thm@bodyfont=\toks48
+\thm@headfont=\toks49
+\thm@notefont=\toks50
+\thm@headpunct=\toks51
+\thm@preskip=\skip74
+\thm@postskip=\skip75
+\thm@headsep=\skip76
+\dth@everypar=\toks52
+)
+\c@theorem=\count296
+\c@lemma=\count297
+\c@corollary=\count298
+\c@proposition=\count299
+\c@characterization=\count300
+\c@property=\count301
+\c@problem=\count302
+\c@example=\count303
+\c@examplesanddefinitions=\count304
+\c@remark=\count305
+\c@definition=\count306
+\c@hypothesis=\count307
+\c@notation=\count308
+\c@assumption=\count309
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyphenat\hyphenat.st
+y"
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language78
+LaTeX Info: Redefining \_ on input line 43.
+) ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip77
+\bibsep=\skip78
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count310
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.st
+y"
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfescap
+e.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltxma
+cro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen287
+\Hy@linkcounter=\count311
+\Hy@pagecounter=\count312
+ ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def
+"
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.st
+y"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.
+sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count313
+Package hyperref Info: Option `unicode' set `true' on input line 4421.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\puenc.def"
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4421.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 4421.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4421.
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count314
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen288
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigintc
+alc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count315
+\Field@Width=\dimen289
+\Fld@charsize=\dimen290
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring ON on input line 6448.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.
+sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count316
+\c@Item=\count317
+)
+Package hyperref Info: Driver: hpdftex.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def
+"
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryend.
+sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rerun
+filecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\uniq
+uecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip79
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/footmisc\footmisc.st
+y"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks53
+\footnotemargin=\dimen291
+\c@pp@next@reset=\count320
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\c@page@totc=\count321
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.st
+y"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count322
+\Gm@cntv=\count323
+\c@Gm@tempcnt=\count324
+\Gm@bindingoffset=\dimen292
+\Gm@wd@mp=\dimen293
+\Gm@odd@mp=\dimen294
+\Gm@even@mp=\dimen295
+\Gm@layoutwidth=\dimen296
+\Gm@layoutheight=\dimen297
+\Gm@layouthoffset=\dimen298
+\Gm@layoutvoffset=\dimen299
+\Gm@dimlist=\toks54
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cf
+g"))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newfloat\newfloat.st
+y"
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+)
+Package newfloat Info: New float `listing' with options `' on input line 986.
+\c@listing=\count325
+Package newfloat Info: float type `listing'=4 on input line 986.
+Package newfloat Info: New float `boxenv' with options `name=Box' on input line
+ 987.
+\c@boxenv=\count326
+Package newfloat Info: float type `boxenv'=8 on input line 987.
+Package newfloat Info: New float `chart' with options `' on input line 988.
+\c@chart=\count327
+Package newfloat Info: float type `chart'=16 on input line 988.
+Package newfloat Info: New float `scheme' with options `' on input line 989.
+\c@scheme=\count328
+Package newfloat Info: float type `scheme'=32 on input line 989.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.sty
+"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen300
+\captionmargin@=\dimen301
+\captionwidth=\dimen302
+\caption@tempdima=\dimen303
+\caption@indent=\dimen304
+\caption@parindent=\dimen305
+\caption@hangindent=\dimen306
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count329
+\c@continuedfloat=\count330
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\@justcentbox=\box65
+\wideitemsep=\skip80
+) (C:/Users/GEF/Desktop/diversity-718596\code_format.tex
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.st
+y"
+\lst@mode=\count331
+\lst@gtempboxa=\box66
+\lst@token=\toks55
+\lst@length=\count332
+\lst@currlwidth=\dimen307
+\lst@column=\count333
+\lst@pos=\count334
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count335
+\lst@lineno=\count336
+\lst@maxwidth=\dimen310
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty
+"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count337
+\lst@skipnumbers=\count338
+\lst@framebox=\box67
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cf
+g"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count339
+\sf@farskip=\skip81
+\sf@captopadj=\dimen311
+\sf@capskip=\skip82
+\sf@nearskip=\skip83
+\c@subfigure=\count340
+\c@subfigure@save=\count341
+\c@lofdepth=\count342
+\c@subtable=\count343
+\c@subtable@save=\count344
+\c@lotdepth=\count345
+\sf@top=\skip84
+\sf@bottom=\skip85
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/changes\changes.sty"
+Package: changes 2019/11/17 v3.2.1 changes package
+*** changes package 2019/11/17 v3.2.1 ***
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.te
+x"
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.t
+ex"
+\XKV@toks=\toks56
+\XKV@tempa@toks=\toks57
+)
+\XKV@depth=\count346
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xifthen\xifthen.sty"
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifmtarg\ifmtarg.sty"
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xstring\xstring.sty"
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstring.te
+x"
+\integerpart=\count347
+\decimalpart=\count348
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+ulem-option 'normalem,normalbf', passed to package ulem
+truncate-option 'breakall,fit', passed to package truncate
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ulem\ulem.sty"
+\UL@box=\box68
+\UL@hyphenbox=\box69
+\UL@skip=\skip86
+\UL@hook=\toks58
+\UL@height=\dimen312
+\UL@pe=\count349
+\UL@pixel=\dimen313
+\ULC@box=\box70
+Package: ulem 2019/11/18
+\ULdepth=\dimen314
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\todonotes.
+sty"
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/
+tikz/libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/
+tikz/libraries\tikzlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/
+tikz/libraries\tikzlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgfl
+ibraryfadings.code.tex"
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+\c@@todonotes@numberoftodonotes=\count350
+)
+\c@Changes@AuthorCount=\count351
+\c@Changes@Author=\count352
+\c@Changes@addedCount=\count353
+\c@Changes@deletedCount=\count354
+\c@Changes@replacedCount=\count355
+\c@Changes@highlightCount=\count356
+\c@Changes@commentCount=\count357
+\c@authorcommentcount=\count358
+
+
+! LaTeX Error: Command \highlight already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.783 }
+       
+? 
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/truncate\truncate.st
+y"
+Package: truncate 2001/08/20  ver 3.6
+\@Trunc@RestHyph=\toks59
+)
+\Changes@truncate@width=\skip87
+\Changes@summary@width=\skip88
+) (C:/Users/GEF/Desktop/diversity-718596\include/data_descrip_figures.tex)
+(C:/Users/GEF/Desktop/diversity-718596\include/dbh_bin_figures.tex)
+(C:/Users/GEF/Desktop/diversity-718596\include/beta_div_figures.tex)
+(C:/Users/GEF/Desktop/diversity-718596\include/plot_div_figures.tex)
+(C:/Users/GEF/Desktop/diversity-718596\include/degrad_figures.tex)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-
+pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count359
+\l__pdf_internal_box=\box71
+)
+No file special_issue_manuscript_changes.aux.
+\openout1 = `special_issue_manuscript_changes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 16
+0.
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count360
+\scratchdimen=\dimen315
+\scratchbox=\box72
+\nofMPsegments=\count361
+\nofMParguments=\count362
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen316
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
+\everyMPtoPDFconversion=\toks61
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 160.
+LaTeX Info: Redefining \microtypecontext on input line 160.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 160.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ppl.cfg
+"
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring ON on input line 160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
+"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.st
+y"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\get
+titlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count366
+)
+LaTeX Info: Redefining \ref on input line 160.
+LaTeX Info: Redefining \pageref on input line 160.
+LaTeX Info: Redefining \nameref on input line 160.
+\@outlinefile=\write4
+\openout4 = `special_issue_manuscript_changes.out'.
+
+\symAMSb=\mathgroup5
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(76.82234pt, 443.86319pt, 76.82234pt)
+* v-part:(T,H,B)=(51.21504pt, 751.15268pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=443.86319pt
+* \textheight=684.15268pt
+* \oddsidemargin=4.55235pt
+* \evensidemargin=4.55235pt
+* \topmargin=-21.05495pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=34.14322pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package newfloat Info: `float' package detected.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count367
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\replaced' on input line 160.
+
+Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 736786 bytes
+(epstopdf)             Output file: <Definitions/logo-mdpi-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 44155 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-mdpi-eps-c
+onverted-to.pdf Definitions/logo-mdpi.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=31, 88.33pt x 58.2175pt>
+File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-mdpi-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
+put line 160.
+(pdftex.def)             Requested size: 43.16885pt x 28.45274pt.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
+60.
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 160.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg
+"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 160.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 160.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+<Definitions/logo-orcid-eps-converted-to.pdf, id=33, 102.3825pt x 102.3825pt>
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 284378 bytes
+(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-02-18 05:03:35
+(epstopdf)                    size: 12600 bytes
+(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
+converted-to.pdf Definitions/logo-orcid.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
+<use Definitions/logo-orcid-eps-converted-to.pdf>
+Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
+nput line 160.
+(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 160.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 160.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 160.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
+60.
+ ("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package natbib Warning: Citation `White1983' on page 1 undefined on input line 
+166.
+
+
+Package natbib Warning: Citation `Mayaux2004' on page 1 undefined on input line
+ 166.
+
+
+Package natbib Warning: Citation `Arino2010' on page 1 undefined on input line 
+166.
+
+
+Package natbib Warning: Citation `Chidumayo1997' on page 1 undefined on input l
+ine 166.
+
+
+Package natbib Warning: Citation `Campbell2002' on page 1 undefined on input li
+ne 166.
+
+
+Package natbib Warning: Citation `Azani2017' on page 1 undefined on input line 
+166.
+
+
+Package natbib Warning: Citation `Campbell2002' on page 1 undefined on input li
+ne 166.
+
+
+Package natbib Warning: Citation `Privette2004' on page 1 undefined on input li
+ne 166.
+
+
+Package natbib Warning: Citation `Caylor2004' on page 1 undefined on input line
+ 166.
+
+
+Package natbib Warning: Citation `Chidumayo2002' on page 1 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 167.
+
+[1
+
+{C:/Users/GEF/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/GEF/
+Desktop/diversity-718596/Definitions/logo-mdpi-eps-converted-to.pdf> <C:/Users/
+GEF/Desktop/diversity-718596/Definitions/logo-orcid-eps-converted-to.pdf>]
+
+LaTeX Warning: Hyper reference `plot_map' on page 2 undefined on input line 168
+.
+
+
+Package natbib Warning: Citation `Dexter2015' on page 2 undefined on input line
+ 168.
+
+
+Package natbib Warning: Citation `Oliveras2016' on page 2 undefined on input li
+ne 168.
+
+
+Package natbib Warning: Citation `Dantas2016' on page 2 undefined on input line
+ 168.
+
+
+Package natbib Warning: Citation `Campbell2002' on page 2 undefined on input li
+ne 168.
+
+
+Package natbib Warning: Citation `DRYFLOR2016' on page 2 undefined on input lin
+e 171.
+
+
+Package natbib Warning: Citation `Torello-raventos2013' on page 2 undefined on 
+input line 171.
+
+
+Package natbib Warning: Citation `Frost1996' on page 2 undefined on input line 
+171.
+
+
+Package natbib Warning: Citation `Ryan2016' on page 2 undefined on input line 1
+71.
+
+
+Package natbib Warning: Citation `Mayaux2008' on page 2 undefined on input line
+ 171.
+
+
+Package natbib Warning: Citation `Clarke2017' on page 2 undefined on input line
+ 171.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 2 undefined on input lin
+e 173.
+
+
+Package natbib Warning: Citation `Oliveira2015' on page 2 undefined on input li
+ne 173.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 2 undefined on input lin
+e 173.
+
+
+Package natbib Warning: Citation `Figueiredo2009' on page 2 undefined on input 
+line 173.
+
+
+Package natbib Warning: Citation `Chisingui2018' on page 2 undefined on input l
+ine 175.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 2 undefined on input lin
+e 175.
+
+
+LaTeX Warning: Hyper reference `plot_map' on page 2 undefined on input line 175
+.
+
+
+Package natbib Warning: Citation `Soares2007' on page 2 undefined on input line
+ 175.
+
+
+Package natbib Warning: Citation `Figueiredo2008' on page 2 undefined on input 
+line 175.
+
+
+Package natbib Warning: Citation `Linder2001' on page 2 undefined on input line
+ 175.
+
+
+Package natbib Warning: Citation `Droissart2018' on page 2 undefined on input l
+ine 175.
+
+
+Package natbib Warning: Citation `Schneibel2013' on page 2 undefined on input l
+ine 177.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 2 undefined on input lin
+e 177.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 2 undefined on input lin
+e 177.
+
+
+Package natbib Warning: Citation `McNicol2015' on page 2 undefined on input lin
+e 179.
+
+
+Package natbib Warning: Citation `Goncalves2017' on page 2 undefined on input l
+ine 179.
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 180.
+
+[2]
+
+Package natbib Warning: Citation `Ryan2011' on page 3 undefined on input line 1
+88.
+
+
+Package natbib Warning: Citation `McNicol2018' on page 3 undefined on input lin
+e 188.
+
+
+Package natbib Warning: Citation `Muledi2017' on page 3 undefined on input line
+ 188.
+
+
+LaTeX Warning: Hyper reference `temp_precip' on page 3 undefined on input line 
+188.
+
+
+LaTeX Warning: Reference `group_descrip' on page 3 undefined on input line 188.
+
+
+<img/plot_map.pdf, id=69, 433.62pt x 433.62pt>
+File: img/plot_map.pdf Graphic file (type pdf)
+<use img/plot_map.pdf>
+Package pdftex.def Info: img/plot_map.pdf  used on input line 192.
+(pdftex.def)             Requested size: 210.83772pt x 210.84138pt.
+<img/temp_precip.pdf, id=70, 433.62pt x 433.62pt>
+File: img/temp_precip.pdf Graphic file (type pdf)
+<use img/temp_precip.pdf>
+Package pdftex.def Info: img/temp_precip.pdf  used on input line 194.
+(pdftex.def)             Requested size: 210.83772pt x 210.84138pt.
+
+Package natbib Warning: Citation `White1983' on page 3 undefined on input line 
+195.
+
+
+Package natbib Warning: Citation `Fick2017' on page 3 undefined on input line 1
+95.
+
+
+Package natbib Warning: Citation `White1983' on page 3 undefined on input line 
+195.
+
+
+Package natbib Warning: Citation `Fick2017' on page 3 undefined on input line 1
+95.
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 197.
+
+[3] (C:/Users/GEF/Desktop/diversity-718596\include/group_descrip.tex)
+
+LaTeX Warning: Reference `bicuar_map' on page 4 undefined on input line 201.
+
+
+LaTeX Warning: Hyper reference `plot_map' on page 4 undefined on input line 205
+.
+
+
+LaTeX Warning: Reference `group_descrip' on page 4 undefined on input line 205.
+
+
+
+Package natbib Warning: Citation `APD2020' on page 4 undefined on input line 20
+7.
+
+
+Package natbib Warning: Citation `Palgrave2003' on page 4 undefined on input li
+ne 207.
+
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 208.
+
+[4 <C:/Users/GEF/Desktop/diversity-718596/img/plot_map.pdf> <C:/Users/GEF/Deskt
+op/diversity-718596/img/temp_precip.pdf>]
+
+Package natbib Warning: Citation `Kershaw2017' on page 5 undefined on input lin
+e 209.
+
+
+Package natbib Warning: Citation `Kershaw2017' on page 5 undefined on input lin
+e 209.
+
+
+LaTeX Warning: Hyper reference `appendixa' on page 5 undefined on input line 20
+9.
+
+
+LaTeX Warning: Reference `bicuar_map' on page 5 undefined on input line 211.
+
+<img/bicuar_map.pdf, id=103, 578.16pt x 433.62pt>
+File: img/bicuar_map.pdf Graphic file (type pdf)
+<use img/bicuar_map.pdf>
+Package pdftex.def Info: img/bicuar_map.pdf  used on input line 215.
+(pdftex.def)             Requested size: 443.86319pt x 332.89595pt.
+
+Package natbib Warning: Citation `WDPA2019' on page 5 undefined on input line 2
+16.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+16.
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package natbib Warning: Citation `ggmap' on page 5 undefined on input line 216.
+
+
+
+Package natbib Warning: Citation `WDPA2019' on page 5 undefined on input line 2
+16.
+
+
+Package natbib Warning: Citation `ggmap' on page 5 undefined on input line 216.
+
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 219.
+
+[5]
+
+Package natbib Warning: Citation `Fick2017' on page 6 undefined on input line 2
+22.
+
+
+Package natbib Warning: Citation `Chave2014' on page 6 undefined on input line 
+222.
+
+
+Package natbib Warning: Citation `vegan' on page 6 undefined on input line 235.
+
+
+
+Package natbib Warning: Citation `Koleff2003' on page 6 undefined on input line
+ 237.
+
+
+Package natbib Warning: Citation `Smith1996' on page 6 undefined on input line 
+238.
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 240.
+
+[6 <C:/Users/GEF/Desktop/diversity-718596/img/bicuar_map.pdf>]
+
+Package natbib Warning: Citation `Legendre2013' on page 7 undefined on input li
+ne 241.
+
+
+Package natbib Warning: Citation `RCoreTeam2019' on page 7 undefined on input l
+ine 241.
+
+
+LaTeX Warning: Reference `bicuar_species' on page 7 undefined on input line 251
+.
+
+(C:/Users/GEF/Desktop/diversity-718596\include/bicuar_species.tex
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
+3.
+
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ppl.fd"
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Overfull \hbox (4.3665pt too wide) in paragraph at lines 7--62
+ [][] 
+ []
+
+)
+
+LaTeX Warning: Reference `div_box' on page 7 undefined on input line 255.
+
+<img/div_box.pdf, id=129, 867.24pt x 433.62pt>
+File: img/div_box.pdf Graphic file (type pdf)
+<use img/div_box.pdf>
+Package pdftex.def Info: img/div_box.pdf  used on input line 259.
+(pdftex.def)             Requested size: 443.86319pt x 221.93063pt.
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 263.
+
+[7]
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 263.
+
+[8]
+
+LaTeX Warning: Reference `all_nmds_envfit' on page 9 undefined on input line 26
+6.
+
+<img/all_nmds_envfit.pdf, id=143, 599.23875pt x 406.51875pt>
+File: img/all_nmds_envfit.pdf Graphic file (type pdf)
+<use img/all_nmds_envfit.pdf>
+Package pdftex.def Info: img/all_nmds_envfit.pdf  used on input line 271.
+(pdftex.def)             Requested size: 210.83772pt x 143.02805pt.
+<img/all_nmds_envfit_low.pdf, id=144, 599.23875pt x 406.51875pt>
+File: img/all_nmds_envfit_low.pdf Graphic file (type pdf)
+<use img/all_nmds_envfit_low.pdf>
+Package pdftex.def Info: img/all_nmds_envfit_low.pdf  used on input line 273.
+(pdftex.def)             Requested size: 210.83772pt x 143.02805pt.
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 276.
+
+[9 <C:/Users/GEF/Desktop/diversity-718596/img/div_box.pdf>]
+
+LaTeX Warning: Reference `site_pairs_js' on page 10 undefined on input line 277
+.
+
+(C:/Users/GEF/Desktop/diversity-718596\include/site_pairs_js.tex)
+
+LaTeX Warning: Reference `div_box' on page 10 undefined on input line 283.
+
+
+LaTeX Warning: Reference `div_box' on page 10 undefined on input line 283.
+
+
+LaTeX Warning: Reference `stem_ab_dbh_bin' on page 10 undefined on input line 2
+85.
+
+<img/stem_ab_dbh_bin_group.pdf, id=158, 578.16pt x 289.08pt>
+File: img/stem_ab_dbh_bin_group.pdf Graphic file (type pdf)
+<use img/stem_ab_dbh_bin_group.pdf>
+Package pdftex.def Info: img/stem_ab_dbh_bin_group.pdf  used on input line 289.
+
+(pdftex.def)             Requested size: 443.86319pt x 221.93063pt.
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 293.
+
+[10 <C:/Users/GEF/Desktop/diversity-718596/img/all_nmds_envfit.pdf> <C:/Users/G
+EF/Desktop/diversity-718596/img/all_nmds_envfit_low.pdf>]
+
+LaTeX Warning: Reference `bicuar_degrad_nmds' on page 11 undefined on input lin
+e 296.
+
+
+LaTeX Warning: Reference `degrad_box' on page 11 undefined on input line 296.
+
+
+LaTeX Warning: Reference `degrad_dbh_bin' on page 11 undefined on input line 29
+6.
+
+<img/bicuar_degrad_nmds.pdf, id=186, 361.35pt x 361.35pt>
+File: img/bicuar_degrad_nmds.pdf Graphic file (type pdf)
+<use img/bicuar_degrad_nmds.pdf>
+Package pdftex.def Info: img/bicuar_degrad_nmds.pdf  used on input line 300.
+(pdftex.def)             Requested size: 355.0919pt x 355.09653pt.
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 304.
+
+[11 <C:/Users/GEF/Desktop/diversity-718596/img/stem_ab_dbh_bin_group.pdf>]
+<img/degrad_box.pdf, id=198, 433.62pt x 433.62pt>
+File: img/degrad_box.pdf Graphic file (type pdf)
+<use img/degrad_box.pdf>
+Package pdftex.def Info: img/degrad_box.pdf  used on input line 307.
+(pdftex.def)             Requested size: 355.0919pt x 355.10754pt.
+
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 311.
+
+[12 <C:/Users/GEF/Desktop/diversity-718596/img/bicuar_degrad_nmds.pdf>]
+<img/degrad_dbh_bin.pdf, id=210, 433.62pt x 289.08pt>
+File: img/degrad_dbh_bin.pdf Graphic file (type pdf)
+<use img/degrad_dbh_bin.pdf>
+Package pdftex.def Info: img/degrad_dbh_bin.pdf  used on input line 314.
+(pdftex.def)             Requested size: 355.0919pt x 236.73836pt.
+
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 318.
+
+[13 <C:/Users/GEF/Desktop/diversity-718596/img/degrad_box.pdf>]
+
+Package natbib Warning: Citation `Terra2018' on page 14 undefined on input line
+ 326.
+
+
+Package natbib Warning: Citation `Strickland2016' on page 14 undefined on input
+ line 326.
+
+
+Package natbib Warning: Citation `Timberlake2010' on page 14 undefined on input
+ line 330.
+
+
+Package natbib Warning: Citation `Chisingui2018' on page 14 undefined on input 
+line 330.
+
+
+Package natbib Warning: Citation `Ngandwe2017' on page 14 undefined on input li
+ne 330.
+
+
+Package natbib Warning: Citation `Wallenfang2015' on page 14 undefined on input
+ line 330.
+
+
+Package natbib Warning: Citation `Sianga2017' on page 14 undefined on input lin
+e 330.
+
+
+Package natbib Warning: Citation `Mukwashi2012' on page 14 undefined on input l
+ine 330.
+
+
+Package natbib Warning: Citation `Smith2004' on page 14 undefined on input line
+ 330.
+
+
+Package natbib Warning: Citation `White1983' on page 14 undefined on input line
+ 330.
+
+
+LaTeX Warning: Reference `bicuar_map' on page 14 undefined on input line 330.
+
+
+Package natbib Warning: Citation `Huntley2019' on page 14 undefined on input li
+ne 330.
+
+
+Package natbib Warning: Citation `Campbell2002' on page 14 undefined on input l
+ine 330.
+
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 331.
+
+[14 <C:/Users/GEF/Desktop/diversity-718596/img/degrad_dbh_bin.pdf>]
+
+Package natbib Warning: Citation `Caro2001' on page 15 undefined on input line 
+334.
+
+
+Package natbib Warning: Citation `McNicol2018b' on page 15 undefined on input l
+ine 334.
+
+
+Package natbib Warning: Citation `Shackleton2000' on page 15 undefined on input
+ line 334.
+
+
+Package natbib Warning: Citation `Goncalves2017' on page 15 undefined on input 
+line 334.
+
+
+Package natbib Warning: Citation `Kalaba2013' on page 15 undefined on input lin
+e 334.
+
+
+Package natbib Warning: Citation `Luoga2004' on page 15 undefined on input line
+ 336.
+
+
+Package natbib Warning: Citation `Wyk2014' on page 15 undefined on input line 3
+36.
+
+
+Package natbib Warning: Citation `Muvengwi2020' on page 15 undefined on input l
+ine 336.
+
+
+Package natbib Warning: Citation `Goncalves2017' on page 15 undefined on input 
+line 336.
+
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 339.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+
+ []
+
+
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 387.
+
+[16]
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.st
+y"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.st
+y"
+File: lstlang2.sty 2019/09/10 1.8c listings language file
+)
+("C:\Users\GEF\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang3.st
+y"
+File: lstlang3.sty 2019/09/10 1.8c listings language file
+)
+No file special_issue_manuscript_changes.bbl.
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 478.
+
+[17]
+
+Package lastpage Warning: Rerun to get the references right on input line 478.
+
+
+AED: lastpage setting LastPage
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 478.
+
+[18]
+
+Package natbib Warning: There were undefined citations.
+
+\Changes@OutFile=\write5
+\openout5 = `special_issue_manuscript_changes.soc'.
+
+\tf@loc=\write6
+\openout6 = `special_issue_manuscript_changes.loc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+(special_issue_manuscript_changes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+
+
+Package rerunfilecheck Warning: File `special_issue_manuscript_changes.out' has
+ changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `special_issue_manuscript_changes.ou
+t':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  B2007162F4EAD895190FE83654A5D157;3421.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 30233 strings out of 481556
+ 523636 string characters out of 2914805
+ 1301270 words of memory out of 3000000
+ 44462 multiletter control sequences out of 15000+200000
+ 595284 words of font info for 300 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,15n,87p,3136b,1985s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\GEF\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ec
+tt0800.pk> <C:\Users\GEF\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
+pi600\ectt1000.pk> <C:\Users\GEF\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt0900.pk> <C:\Users\GEF\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecss0500.pk>{C:/Users/GEF/AppData/Local/Programs/MiKTeX 2
+.9/fonts/enc/dvips/base/8r.enc}<C:/Users/GEF/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/GEF/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/GEF/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/GEF/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
+<C:/Users/GEF/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a
+.pfb><C:/Users/GEF/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/u
+plr8a.pfb><C:/Users/GEF/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palat
+ino/uplri8a.pfb>
+Output written on special_issue_manuscript_changes.pdf (18 pages, 4478347 bytes
+).
+PDF statistics:
+ 475 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 44201 words of extra memory for PDF output out of 51595 (max. 10000000)
+
