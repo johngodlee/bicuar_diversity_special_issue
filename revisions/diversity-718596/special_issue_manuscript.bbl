@@ -104,6 +104,15 @@ Chidumayo, E.N.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/http://dx.doi.org/10.1046/j.1365-2699.2002.00794.x}{\detokenize{http://dx.doi.org/10.1046/j.1365-2699.2002.00794.x}}}.
 
+\bibitem[Ratnam \em{et~al.}(2011)Ratnam, Bond, Fensham, Hoffmann, Archibald,
+  Lehmann, Anderson, Higgins, and Sankaran]{Ratnam2011}
+Ratnam, J.; Bond, W.J.; Fensham, R.J.; Hoffmann, W.A.; Archibald, S.; Lehmann,
+  C.E.R.; Anderson, M.T.; Higgins, S.I.; Sankaran, M.
+\newblock When is a `forest' a savanna, and why does it matter?
+\newblock {\em Global Ecology and Biogeography} {\bf 2011}, {\em 20},~653--660.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/http://dx.doi.org/10.1111/j.1466-8238.2010.00634.x}{\detokenize{http://dx.doi.org/10.1111/j.1466-8238.2010.00634.x}}}.
+
 \bibitem[Dexter \em{et~al.}(2015)Dexter, Smart, Baldauf, Baker, {Bessike
   Balinga}, Brienen, Fauset, Feldpausch, {Ferreira-da Silva}, Muledi, Lewis,
   {Lopez-Gonzalez}, {Marimon-Junior}, Marimon, Meerts, Page, Parthasarathy,
@@ -566,5 +575,13 @@ Muvengwi, J.; Chisango, T.; Mpakairi, K.; Mbiba, M.; Witkowski, E.T.F.
 \newblock {\em Forest Ecology and Management} {\bf 2020}, {\em 458},~1--10.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/http://dx.doi.org/10.1016/j.foreco.2019.117792}{\detokenize{http://dx.doi.org/10.1016/j.foreco.2019.117792}}}.
+
+\bibitem[Chidumayo(2013)]{Chidumayo2013}
+Chidumayo, E.N.
+\newblock Forest degradation and recovery in a miombo woodland landscape in
+  {Zambia}: 22 years of observations on permanent sample plots.
+\newblock {\em Forest Ecology and Management} {\bf 2013}, {\em 291},~154--161.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/http://dx.doi.org/10.1016/j.foreco.2012.11.031}{\detokenize{http://dx.doi.org/10.1016/j.foreco.2012.11.031}}}.
 
 \end{thebibliography}
