@@ -1,12 +1,12 @@
-Code for "[Diversity and structure of an arid woodland at the western edge of the miombo ecoregion, southwest Angola](PLACEHOLDER)"
+Code for "[Diversity and Structure of an Arid Woodland at the Western Edge of the Miombo Ecoregion, Southwest Angola](PLACEHOLDER)"
 
-Godlee, J. L.; Gonçalves, F. M.; Tchamba, J. J.; Chisingui, A. V.; Muledi, J. I.; Shutcha, M. N.; Ryan, C. M.; Dexter, K. G. Diversity and structure of an arid woodland at the western edge of the miombo ecoregion, southwest Angola. _Diversity_ __2020__, 12(1), 1-19. 
+Godlee, J. L.; Gonçalves, F. M.; Tchamba, J. J.; Chisingui, A. V.; Muledi, J. I.; Shutcha, M. N.; Ryan, C. M.; Dexter, K. G. Diversity and Structure of an Arid Woodland at the Western Edge of the Miombo Ecoregion, Southwest Angola. _Diversity_ __2020__, 12(1), 1-19. 
 
 > "Seasonally dry woodlands are the dominant land cover across southern Africa. They are biodiverse, structurally complex and important for ecosystem service provision. Species composition and structure vary across the region producing a diverse array of woodland types. The woodlands of the Hu\'{i}la plateau in southwest Angola represent the extreme southwestern extent of the miombo ecoregion and are markedly drier than other woodlands within this ecoregion. They remain understudied however, compared to woodlands further east in the miombo ecoregion. We conducted a plot-based study in Bicuar National Park, southwest Angola, comparing tree species composition and woodland structure with similar plots in Tanzania, Mozambique, and the Democratic Republic of Congo. We found plots in Bicuar National Park had comparatively low tree species diversity, but contained 28 tree species not found in other plots. Plots in Bicuar had low basal area, excepting plots dominated by \textit{Baikiaea plurijuga}. In a comparison of plots in intact vegetation with plots in areas previously disturbed by shifting-cultivation agriculture, we found species diversity was marginally higher in disturbed plots. Our study supports the idea that Bicuar National Park and the woodlands of the Hu\'{i}la plateau should be a conservation priority, representing a unique woodland mosaic with an uncommon mixture of woodland types within a small area."
 
 ```
 @article{Godlee2020diversity,
-  title = {Diversity and structure of an arid woodland at the western edge of the miombo ecoregion, southwest Angola},
+  title = {Diversity and Structure of an Arid Woodland at the Western Edge of the Miombo Ecoregion, Southwest Angola},
   author = {Godlee, J. L. and Gon\c{c}alves, F. M. and Tchamba, J. J. and Chisingui, A. V. and Muledi, J. I. and Shutcha, M. N. and Ryan, C. M. and Dexter, K. G.},
   journal = {Diversity},
   year = 2020,

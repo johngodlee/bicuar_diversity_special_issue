@@ -14,6 +14,7 @@ library(tidyr)
 library(ggplot2)
 library(vegan)
 library(stargazer)
+library(agricolae)
 
 source("scripts/functions.R")
 
@@ -102,10 +103,26 @@ alpha_df <- left_join(alpha_df, ba, by = "plotcode") %>%
     TRUE ~ basal_area
   ))
 
-# Linear model, groups vs. basal area
+# Linear model, groups vs. div indices
+sp_group_lm <- lm(rich ~ group, data = alpha_df)
+summary(sp_group_lm)
+sp_group_tukey <- TukeyHSD(aov(sp_group_lm))
+sp_group_tukey_groups <- HSD.test(sp_group_lm, trt = "group")
+
 ba_group_lm <- lm(basal_area ~ group, data = alpha_df)
 summary(ba_group_lm)
 ba_group_tukey <- TukeyHSD(aov(ba_group_lm))
+ba_group_tukey_groups <- HSD.test(ba_group_lm, trt = "group")
+
+sh_group_lm <- lm(shannon ~ group, data = alpha_df)
+summary(sh_group_lm)
+sh_group_tukey <- TukeyHSD(aov(sh_group_lm))
+sh_group_tukey_groups <- HSD.test(sh_group_lm, trt = "group")
+
+se_group_lm <- lm(shannon_equit ~ group, data = alpha_df)
+summary(se_group_lm)
+se_group_tukey <- TukeyHSD(aov(se_group_lm))
+se_group_tukey_groups <- HSD.test(se_group_lm, trt = "group")
 
 alpha_df$plotcode <-
   gsub("ABG-", "ANG-", alpha_df$plotcode) %>%
@@ -121,15 +138,9 @@ alpha_df$plotcode <-
 alpha_df_gather <- alpha_df %>%
   group_by(group) %>%
   gather("index", "value", -group, -plotcode) %>%
-  mutate(index = case_when(
-    index == "rich" ~ "Species richness",
-    index == "shannon" ~ "Shannon-Wiener index", 
-    index == "shannon_equit" ~ "Shannon equitability",
-    index == "basal_area" ~ "Basal area",
-    TRUE ~ index)) %>%
   mutate(index = factor(index, 
-    levels = c("Species richness", "Basal area", 
-      "Shannon-Wiener index", "Shannon equitability"),
+    levels = c("rich", "basal_area", 
+      "shannon", "shannon_equit"),
     labels = c(expression("Species"~"richness"), 
       expression("Basal"~"area"~(m^2~ha^-1)), 
       expression("Shannon-Wiener"~"index"), 
@@ -141,6 +152,23 @@ alpha_df_gather <- alpha_df %>%
     group == "kilwa" ~ "Tanzania",
     group == "nham" ~ "Mozambique"))
 
+sp_annot <- data.frame(
+  group = rep(c("Bicuar NP", "DRC", "Tanzania", "Mozambique"), times = 4),
+  y = c(rep(110, times = 4), rep(9, times = 4), rep(3.8, times = 4), rep(1, times = 4)),
+  text = c("a", "b", "a", "b", 
+    "ab", "c", "b", "a",
+    "a", "b", "b", "b",
+    "a", "a", "a", "a"),
+  index = factor(c(rep("rich", times = 4), rep("basal_area", times = 4), 
+    rep("shannon", times = 4), rep("shannon_equit", times = 4)),
+    levels = c("rich", "basal_area", 
+      "shannon", "shannon_equit"),
+    labels = c(expression("Species"~"richness"), 
+      expression("Basal"~"area"~(m^2~ha^-1)), 
+      expression("Shannon-Wiener"~"index"), 
+      expression("Shannon"~"equitability")))
+)
+
 pdf("img/div_box.pdf", width = 12, height = 6)
 ggplot() +
   geom_boxplot(data = alpha_df_gather, aes(x = group, y = value, fill = group)) + 
@@ -148,10 +176,11 @@ ggplot() +
   theme_classic() + 
   scale_fill_manual(name = "", values = big_pal) + 
   theme(legend.position = "none") + 
-  labs(x = "Site", y = "")
+  labs(x = "Site", y = "") +
+  geom_text(aes(x = group, y = y, label = text), data = sp_annot, size = 5)
 dev.off()
 
-# Pairwise Jaccard-Sorensen beta diversity ----
+  # Pairwise Jaccard-Sorensen beta diversity ----
 # Generate pairwise list for each group of plots
 species_group_list_plot <- lapply(
   list(bicuar = trees_ab_mat_list$bicuar, drc = trees_ab_mat_list$drc, 
@@ -364,6 +393,14 @@ writeLines(
     paste0("\\newcommand{\\bicuarbamax}{", bicuarbamax, "}"),
     paste0("\\newcommand{\\lmbasmallstems}{", lm_format(lm_ba_small_stems), "}")
     ),
+  fileConn)
+close(fileConn)
+
+# Anova table
+fileConn <- file(paste0("include/anova_table.tex"))
+writeLines(
+  stargazer(sp_group_lm, ba_group_lm, sh_group_lm, se_group_lm, 
+    notes.label	= ""),
   fileConn)
 close(fileConn)
 

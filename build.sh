@@ -16,21 +16,21 @@ INC="manuscript/include/"
 # rm data/region_temp_precip.rds
 
 # Run data analysis
-Rscript scripts/temp_precip_region.R
-Rscript scripts/stems_clean.R
-Rscript scripts/species_clean.R
-Rscript scripts/bicuar_20_50.R
-Rscript scripts/stems_to_trees.R
-Rscript scripts/plot_loc.R
-Rscript scripts/plot_clim.R
-Rscript scripts/plot_div.R
-Rscript scripts/beta_div.R
-Rscript scripts/data_descrip.R
-Rscript scripts/dbh_bin.R
-Rscript scripts/degrad.R
-Rscript scripts/bicuar_map.R
-Rscript scripts/bicuar_species_table.R
-Rscript scripts/plot_clim_plot.R
+#Rscript scripts/temp_precip_region.R
+#Rscript scripts/stems_clean.R
+#Rscript scripts/species_clean.R
+#Rscript scripts/bicuar_20_50.R
+#Rscript scripts/stems_to_trees.R
+#Rscript scripts/plot_loc.R
+#Rscript scripts/plot_clim.R
+#Rscript scripts/plot_div.R
+#Rscript scripts/beta_div.R
+#Rscript scripts/data_descrip.R
+#Rscript scripts/dbh_bin.R
+#Rscript scripts/degrad.R
+#Rscript scripts/bicuar_map.R
+#Rscript scripts/bicuar_species_table.R
+#Rscript scripts/plot_clim_plot.R
 
 # Copy analysis outputs to manuscript directory
 mkdir -p $IMG
@@ -47,6 +47,8 @@ cp img/stem_ab_dbh_bin_group.pdf $IMG
 mkdir -p $INC
 
 cp include/group_descrip.tex $INC
+cp include/anova_table.tex $INC
+cp include/anova_degrad.tex $INC
 cp include/site_pairs_js.tex $INC
 cp include/bicuar_species.tex $INC
 cp include/data_descrip_figures.tex $INC
@@ -85,6 +87,19 @@ sed -i 's/\\}/}/g' "${INC}bicuar_species.tex"
 sed -i '10s/.*/{Family} \& {Species} \& \\multicolumn{1}{p{2cm}}{\\centering Stem diam. \\\\ (cm)} \& \\multicolumn{1}{p{2cm}}{\\centering Basal area \\\\ (m\\textsuperscript{2} ha\\textsuperscript{-1})} \& {N stems} \& {N stems ha\\textsuperscript{-1}} \\\\/' "${INC}bicuar_species.tex"
 sed -i 's/\\extracolsep{5pt}} cccccc/\\extracolsep{-5pt}} rrcccc/g' "${INC}bicuar_species.tex"
 sed -i 's/caption{}/caption{Species found in one hectare plots in Bicuar National Park. Stem diameter and basal area are the mean of all stems with the standard error of the mean in brackets. Number of stems per hectare is mean of the number of stems in all one hectare plots where stems of that species are present with the standard error of the mean in brakcets. Species found only in Bicuar National Park are marked in bold text with an asterisk.}/g' "${INC}bicuar_species.tex"
+
+sed -i 's/\\extracolsep{5pt}}lcccc/\\extracolsep{0pt}}lcccc/g' "${INC}anova_table.tex"
+sed -i 's/groupdrc/DRC/'"${INC}anova_table.tex"
+sed -i 's/groupkilwa/Tanzania/' "${INC}anova_table.tex"
+sed -i 's/groupnham/Mozambique/' "${INC}anova_table.tex"
+sed -i 's/rich/Species richness/' "${INC}anova_table.tex"
+sed -i 's/basal\\_area/Basal area/g' "${INC}anova_table.tex"
+sed -i "s/shannon/Shannon ($H'$)/g" "${INC}anova_table.tex"
+sed -i 's/shannon\\_equit/Shannon equitability ($E_{H}$)/g' "${INC}anova_table.tex"
+sed -i '6d' "${INC}anova_table.tex"
+sed -i 's/caption{}/caption{Results of ANOVA tests for alpha diversity metrics and plot basal area, among the four sites. Mean values for each site with standard errors in parentheses are shown. Asterisks indicate the p-value of individual sites (***<0.001, **<0.01, *<0.05, .<0.1).}/g' "${INC}anova_table.tex"
+sed -i '33d' "${INC}anova_table.tex"
+
 
 # Compile manuscript
 cd manuscript

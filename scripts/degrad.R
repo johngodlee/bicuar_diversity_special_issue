@@ -185,7 +185,6 @@ bicuar_trees_degrad_beta_div_plot <- ggplot() +
   scale_fill_manual(name = "", values = degrad_pal, labels = c("Degraded", "Non-degraded")) + 
   scale_colour_manual(name = "", values = degrad_pal, labels = c("Degraded", "Non-degraded"))
 
-
 pdf(file = paste0("img/bicuar_degrad_beta_div.pdf"), width = 8, height = 6)
 bicuar_trees_degrad_beta_div_plot
 dev.off()
@@ -319,15 +318,6 @@ plot_group_degrad_summ <- plot_group_degrad %>%
     equit_mean = mean(equit),
     equit_sd = sd(equit))
 
-shannon_degrad_lm <- lm(shannon ~ group, data = plot_group_degrad)
-summary(shannon_degrad_lm)
-TukeyHSD(aov(shannon_degrad_lm))
-
-equit_degrad_lm <- lm(equit ~ group, data = plot_group_degrad)
-summary(equit_degrad_lm)
-TukeyHSD(aov(equit_degrad_lm))
-
-# Boxplots ----
 bicuar_div_gather <- bicuar_trees_all_df %>%
   mutate(ba = ((dbh_cm / 2)^2) * 0.0001) %>%
   group_by(plotcode) %>%
@@ -352,6 +342,37 @@ bicuar_div_gather <- bicuar_trees_all_df %>%
     group == "degrad" ~ "Disturbed"
   ))
 
+sp_degrad_lm <- lm(rich ~ group, data = plot_group_degrad)
+summary(sp_degrad_lm)
+TukeyHSD(aov(sp_degrad_lm))
+
+ba_degrad_lm <- bicuar_div_gather %>% filter(index == "ba") %>%
+  mutate(group = case_when(
+    group == "Not disturbed" ~ "bicuar",
+    group == "Disturbed" ~ "degrad"
+  )) %>%
+  lm(value ~ group, data = .)
+
+summary(ba_degrad_lm)
+TukeyHSD(aov(ba_degrad_lm))
+
+sh_degrad_lm <- lm(shannon ~ group, data = plot_group_degrad)
+summary(sh_degrad_lm)
+TukeyHSD(aov(sh_degrad_lm))
+
+se_degrad_lm <- lm(equit ~ group, data = plot_group_degrad)
+summary(se_degrad_lm)
+TukeyHSD(aov(se_degrad_lm))
+
+fileConn <- file(paste0("include/degrad_anova_table.tex"))
+writeLines(
+  stargazer(sp_degrad_lm, ba_degrad_lm, sh_degrad_lm, se_degrad_lm, 
+    notes.label	= ""),
+  fileConn)
+close(fileConn)
+
+# Boxplots ----
+
 box_degrad <- ggplot() + 
   geom_boxplot(data = bicuar_div_gather,
     aes(x = group, y = value, fill = group)) + 
@@ -364,6 +385,10 @@ box_degrad <- ggplot() +
 pdf("img/degrad_box.pdf", width = 6, height = 6)
 box_degrad
 dev.off()
+
+
+  
+
 
 # Output numerical figures ----
 bmdbhdegrad <- paste0(round(common_dim_degrad$mean_dbh, digits = 1), 
