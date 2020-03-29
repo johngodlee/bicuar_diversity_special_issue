@@ -42,3 +42,33 @@ Date of this review
 	* Tukey's tests are not informative for statistical comparison of only two groups and so were not included in the original analysis. We have not included results of Tukey's tests in Figure 7.
 
 * Improve discussion about environmental variables.
+
+# Response letter
+
+Dear reviewer 2,
+
+    Many thanks for picking up on a number of points which deserved further elaboration in our manuscript, and the stylistic suggestions as well. We hope that the changes made in light of your comments address your initial concerns. 
+
+
+
+As you suggested, we have written the aims of our study more specifically as a list at the end of the Introduction section of the manuscript. We hope that this clarifies for the reader our purpose and primes them for reading the rest of the manuscript.
+
+We have elobarated on our description of the three other fieldsites used as a comparison against Bicuar National Park in our study. We have included details of the plot installation process at each site and a brief description of the woodland types covered by each set of plots.
+
+As you suggested on Line 122-123, we have re-written this sentence to make it more concise and easily readable. It now reads: "At all sites, we used Palgrave [ref], along with other texts, to identify tree species".
+
+We have included formulas and descriptions for each of the diversity indices included in our methodology, and added the species richness measurement to our methods.
+
+We have included tables detailing the results of each ANOVA test reported in our study. We feel these tables report all the relevant statistics to allow readers to suitably interrogate this part of the analysis. Table 3 reports results comparing the 1 ha plots at the four sites across the miombo ecoregion and Table 5 reports results comparing disturbed and undisturbed plots in Bicuar National Park.
+
+We have added grouping labels (a, b, c, etc.) to Figure 3 from the results of our post-hoc Tukey's tests. Tukey's tests were not performed on ANOVAs comparing disturbed and undisturbed plots as Tukey's tests are uninformative for comparisons of only two groups, therefore we have not included results of these tests in Figure 7.
+
+Please see the attached .pdf for a full record of our revisions.
+
+Many thanks again for taking the time to provide an informative review. We feel our manuscript is markedly improved for incorporating your suggestions.
+
+
+
+Yours,
+
+John Godlee
