@@ -1,4 +1,4 @@
-PWD /Users/johngodlee/Downloads/diversity-718596
+PWD /Users/johngodlee/google_drive/postgrad/phd/fieldwork_2019/bicuar_diversity_special_issue/revisions/diversity-718596_2
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -530,8 +530,6 @@ INPUT ./img/all_nmds_envfit.pdf
 INPUT img/all_nmds_envfit_low.pdf
 INPUT ./img/all_nmds_envfit_low.pdf
 INPUT ./img/all_nmds_envfit_low.pdf
-INPUT include/site_pairs_js.tex
-INPUT include/site_pairs_js.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
@@ -544,6 +542,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT include/site_pairs_js.tex
+INPUT include/site_pairs_js.tex
 INPUT img/stem_ab_dbh_bin_group.pdf
 INPUT ./img/stem_ab_dbh_bin_group.pdf
 INPUT ./img/stem_ab_dbh_bin_group.pdf
