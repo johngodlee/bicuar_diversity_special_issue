@@ -146,8 +146,5 @@ Godlee, J. L.; Gonçalves, F. M.; Tchamba, J. J.; Chisingui, A. V.; Muledi, J. 
 
 EOL
 
-
-
-
 } > output.log 2>&1
 
