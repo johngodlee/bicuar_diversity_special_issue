@@ -1,0 +1,135 @@
+%================================================%
+% Revision / diff package for LaTeX
+% Created with love by Pedro Mateo
+%================================================%
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{revdiff}[2015/12/13 revdiff Package]
+
+\RequirePackage{letltxmacro}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage[normalem]{ulem}
+
+\definecolor{newcolor}{RGB}{0,0,240}
+\definecolor{oldcolor}{RGB}{253,102,102}
+\definecolor{tagcolor}{RGB}{253,128,0}
+\definecolor{commentcolor}{RGB}{0,153,0}
+
+\newcommand{\rnew}[1]{#1}
+\newcommand{\rold}[1]{#1}
+\newcommand{\rchange}[2]{#2}
+\newcommand{\rtag}[1]{#1}
+\newcommand{\rcomment}[1]{#1}
+\newcommand{\renclose}[2]{#2}
+\newcommand{\rtchange}[3]{#3}
+\newcommand{\rtcomment}[2]{#2}
+\newcommand{\rtenclose}[3]{#3}
+\newcommand{\rlegend}{}
+
+% Cites have to be inserted into mbox to allow strikethrough
+\LetLtxMacro\origcite\cite
+
+
+%================================================%
+% Declare options - revision mode
+%================================================%
+
+\DeclareOption{revision}{
+  
+  \renewcommand{\rnew}[1]{\textcolor{newcolor}{#1}}
+  \renewcommand{\rold}[1]{\textcolor{oldcolor}{{\sout{#1}}}} 
+  \renewcommand{\rchange}[2]{\rold{#1}\rnew{#2}}
+  
+  \renewcommand{\rtag}[1]{\noindent \raisebox{-1.2ex}{\tikz{\node[text height=1.5ex,text depth=.5ex,scale=.9,fill=tagcolor!50,draw=tagcolor!100,thick,rounded corners] {\tt #1};}}}
+  
+  \renewcommand{\rcomment}[1]{\noindent \textcolor{commentcolor}{\sf //#1//}}
+  
+  \renewcommand{\renclose}[2]{~~\textcolor{commentcolor}{#1 $>>>>$} #2 \textcolor{commentcolor}{$<<<<$}~~}
+  
+  \renewcommand{\rtchange}[3]{\rtag{#1}~\rchange{#2}{#3}}
+  \renewcommand{\rtcomment}[2]{\rtag{#1}~\rcomment{#2}}
+  \renewcommand{\rtenclose}[3]{\rtag{#1}~\renclose{#2}{#3}}
+  
+  % cite needs to be redefined to avoid compilation errors
+  \renewcommand{\cite}[1]{\mbox{\origcite{#1}}}
+  
+  % this command prints a legend 
+  \renewcommand{\rlegend}{
+     \textbf{Warning:}
+     This is a revised version including diff statements. 
+     Changes in the text are marked as follows:
+     %
+     \rnew{Blue color is used to denote new text.} 
+     \rold{Removed text is turn into red.}
+     Changes can also be inline: \rchange{This is an}{ inline change.}
+     You can also find \rtag{tags} and \rcomment{other comments} in the text.
+     Comments can be \renclose{linked to}{a specific part of the text.}
+     Changes can be also \rtchange{tagged}{to mark}{something}. 
+     Comments can be \rtcomment{tagged}{as well}.
+  }
+}
+
+
+%================================================%
+% Declare options - new mode
+%================================================%
+
+\DeclareOption{new}{
+
+  \renewcommand{\rnew}[1]{\textcolor{newcolor}{#1}}
+  \renewcommand{\rold}[1]{\textcolor{oldcolor}{[\ldots]}}
+  \renewcommand{\rchange}[2]{\rnew{#2}}
+  \renewcommand{\rtag}[1]{}
+  \renewcommand{\rcomment}[1]{}
+  \renewcommand{\renclose}[2]{#2}
+  
+  \renewcommand{\rtchange}[3]{\rchange{#2}{#3}}
+  \renewcommand{\rtcomment}[2]{\rcomment{#2}}
+  \renewcommand{\rtenclose}[3]{\renclose{#2}{#3}}
+  
+  % cite needs to be redefined to avoid compilation errors
+  %\renewcommand{\cite}[1]{\origcite{#1}}
+  
+  % this command prints a legend 
+  \renewcommand{\rlegend}{}
+}
+
+
+%================================================%
+% Declare options - clean mode
+%================================================%
+
+\DeclareOption{clean}{
+
+  \renewcommand{\rnew}[1]{#1}
+  \renewcommand{\rold}[1]{}
+  \renewcommand{\rchange}[2]{#2}
+  \renewcommand{\rtag}[1]{}
+  \renewcommand{\rcomment}[1]{}
+  \renewcommand{\renclose}[2]{#2}
+  
+  \renewcommand{\rtchange}[3]{#3}
+  \renewcommand{\rtcomment}[2]{}
+  \renewcommand{\rtenclose}[3]{#3}
+  
+  % cite needs to be redefined to avoid compilation errors
+  \renewcommand{\cite}[1]{\origcite{#1}}
+  
+  % this command prints a legend 
+  \renewcommand{\rlegend}{}
+}
+
+
+%================================================%
+% 
+%================================================%
+
+% default option
+\ExecuteOptions{clean}
+
+
+\ProcessOptions\relax
+
+
+\endinput
