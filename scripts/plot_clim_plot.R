@@ -61,7 +61,7 @@ ggplot() +
     colour = "black", shape = 21, size = 4) + 
   scale_fill_manual(name = "", values = big_pal) +
   theme_classic() + 
-  labs(x= expression("MAT" ~ (degree*C)), 
+  labs(x = expression("MAT" ~ (degree*C)), 
     y = expression("MAP" ~ (mm ~ y^-1)))
 dev.off()
 
